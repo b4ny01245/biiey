@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sample Landing Page</title>
+    <link rel="icon" href="assets/image.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body id="home">
+    <header>
+        <div class="head">
+            <img src="assets/image.jpg" alt="myLogo">
+            <strong>My Sample Landing Page</strong>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+            <nav id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Featured Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <section class="hero">
+            <h1>Prof John Doe MIT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugiat ut saepe minima. Rem, inventore
+                consectetur. Laboriosam dolores rerum dolorem. Repellendus deleniti labore recusandae harum voluptatem
+                quae repellat ex dicta.</p>
+            <a href="#projects">View Projects</a> <a href="#contact">Contact Me</a>
+        </section>
+        <hr>
+
+        <section id="about">
+            <div class="about-header">
+                <h1 class="eyebrow">Get to Know Me</h1>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/companyowner.jpg" alt="Picture of the Person">
+                </div>
+                <div class="about-content">
+                    <p class="about-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat ex est
+                        voluptate, illum,
+                        voluptatibus aliquid placeat illo, earum beatae quis! Officia quas consequuntur debitis, laborum
+                        nihil
+                        ducimus esse exercitationem!</p>
+
+                    <div class="about-blocks">
+                        <div class="about-block">
+                            <div class="about-block-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="about-block-text">
+                                <h3>Experience</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, harum dolorem
+                                    impedit delectus
+                                    voluptatem dolor fuga quas totam dicta repudiandae fugiat officiis omnis eaque esse!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-block">
+                            <div class="about-block-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="about-block-text">
+                                <h3>Education</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure optio, eligendi quis
+                                    sequi est at natus
+                                    maiores in repellendus alias? Fuga, nesciunt aliquam facilis totam maxime.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-block">
+                            <div class="about-block-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="about-block-text">
+                                <h3>Strengths & Working Style</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eaque mollitia rem!
+                                    Libero facilis minus id
+                                    culpa corporis. Perferendis, ducimus. Nemo magnam neque praesentium temporibus
+                                    quidem.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+
+                    <a href="assets/resume.pdf" download class="resume-btn">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section id="services" class="flexbox-services">
+            <h1>Services I Offer</h1>
+            <div class="services">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, excepturi quam labore dolore
+                        deserunt ipsum quia minus. Ducimus vitae, iure corrupti non, et adipisci debitis vel harum
+                        veniam alias consectetur?</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, excepturi quam labore dolore
+                        deserunt ipsum quia minus. Ducimus vitae, iure corrupti non, et adipisci debitis vel harum
+                        veniam alias consectetur?</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, excepturi quam labore dolore
+                        deserunt ipsum quia minus. Ducimus vitae, iure corrupti non, et adipisci debitis vel harum
+                        veniam alias consectetur?</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <section id="projects" class="flexbox-projects">
+            <h1>Our Projects</h1>
+            <div class="flex1">
+                <img src="assets/1stproj.jpg" alt="First Project Display">
+                <h3>First Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, excepturi quam labore dolore
+                    deserunt ipsum quia minus. Ducimus vitae, iure corrupti non, et adipisci debitis vel harum veniam
+                    alias consectetur?</p>
+                <div class="project-links">
+                    <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+                </div>
+            </div>
+            <div class="flex2">
+                <img src="assets/2ndproj.jpg" alt="Second Project Display">
+                <h3>Second Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, excepturi quam labore dolore
+                    deserunt ipsum quia minus. Ducimus vitae, iure corrupti non, et adipisci debitis vel harum veniam
+                    alias consectetur?</p>
+                <div class="project-links">
+                    <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+                </div>
+            </div>
+            <div class="flex3">
+                <img src="assets/3rdproj.jpg" alt="Third Project Display">
+                <h3>Third Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, excepturi quam labore dolore
+                    deserunt ipsum quia minus. Ducimus vitae, iure corrupti non, et adipisci debitis vel harum veniam
+                    alias consectetur?</p>
+                <div class="project-links">
+                    <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h1>Contact Us</h1>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Let’s talk</h3>
+                    <p>Have questions about our services or want to discuss a project? We’d love to hear from you.</p>
+                    <ul class="contact-list">
+                        <li>Email: sample@company.com</li>
+                        <li>Phone: +63912-153-4567</li>
+                        <li>Location: 123 Company Site, Metro Manila 200</li>
+                    </ul>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" aria-label="Your Name">
+                    <input type="email" name="email" placeholder="Your Email" aria-label="Your Email">
+                    <textarea name="message" rows="5" placeholder="Your Message" aria-label="Your Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="assets/image.jpg" alt="myLogo">
+        <p>&copy; b4ny01245. All rights reserved.</p>
+        <a href="#home">Back to Top</a>
+    </footer>
+</body>
+
+</html>

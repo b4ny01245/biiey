@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services & Templates | Biiey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <style>
+    .compact-contact {
+      padding: 55px 0;
+    }
+
+    .compact-contact .section-header {
+      margin-bottom: 28px;
+    }
+
+    .compact-contact .contact-form-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .compact-contact .form-group {
+      margin-bottom: 14px;
+    }
+
+    .compact-contact textarea {
+      min-height: 90px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">Loading</span>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html#home" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Biiey<span class="logo-bracket">/&gt;</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home" class="nav-link">Check my Portfolio</a></li>
+      <li><a href="#contact" class="nav-link">Enquire</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── My Services ── -->
+  <section id="projects" class="projects section templates-page">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Affordable Digital Services</span>
+        <h2 class="section-title">Bring Your Ideas to Life</h2>
+        <p class="section-desc"> Get responsive landing pages and custom designs made for your brand, business, or
+          personal project. <em>Starting at ₱150 (~$3)</em></p>
+        <br>
+        <a href="#contact" class="nav-cta">Click here if you have any enquiries.</a>
+      </div>
+
+      <div class="project-filters reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="templates">Templates</button>
+        <button class="filter-btn" data-filter="logos">Logos & Designs</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal-up delay-1" data-category="templates" data-gallery='["ME.png","logo.jpg"]'>
+          <div class="project-thumb template-thumb">
+            <img src="ME.png" alt="Landing page template preview">
+            <div class="project-num">01</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Free Landing Page</span>
+              <span class="project-year">Free Template</span>
+            </div>
+            <h3>Free Black & White Landing Page Template</h3>
+            <p>You can download and use this template for your projects for free.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-images"></i> View Gallery</button>
+              <a href="https://b4ny01245.github.io/Modern-Landing-Page-Website-Template/" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+              <a href="https://github.com/b4ny01245/Modern-Landing-Page-Website-Template/archive/refs/heads/main.zip"
+                class="plink plink-secondary"><i class="fa fa-download"></i> Download</a>
+
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-category="logos" data-gallery='["Logos&Designs/Slide1.PNG","Logos&Designs/Slide2.PNG","Logos&Designs/Slide3.PNG","Logos&Designs/Slide4.PNG","Logos&Designs/Slide5.PNG"]'>
+          <div class="project-thumb template-thumb logo-thumb">
+            <img src="Logos&Designs/Slide1.PNG" alt="Logo design preview">
+            <div class="project-num">02</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Logo Design</span>
+              <span class="project-year">Branding</span>
+            </div>
+            <h3>Logo Design for Your Brand</h3>
+            <p>Simple, memorable logo concepts made to give your business or project a professional identity.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-expand"></i> View Larger</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-2" data-category="templates" data-gallery='["ME.png","logo.jpg"]'>
+          <div class="project-thumb template-thumb">
+            <img src="ME.png" alt="Business landing page template preview">
+            <div class="project-num">03</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">For Portfolio</span>
+              <span class="project-year">Customizable/Template</span>
+            </div>
+            <h3>Pink Theme - Portfolio Landing Page</h3>
+            <p>Trustworthy and polished layout for companies, services, and organizations.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-images"></i> View Gallery</button>
+              <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-category="logos" data-gallery='["logo.jpg"]'>
+          <div class="project-thumb template-thumb logo-thumb">
+            <img src="logo.jpg" alt="Logo design preview">
+            <div class="project-num">04</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">ID Design</span>
+              <span class="project-year">Branding</span>
+            </div>
+            <h3>ID Design for Your School or Company</h3>
+            <p>Simple, memorable ID concepts made to give your institution or organization a professional identity.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-expand"></i> View Larger</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-1" data-category="templates" data-gallery='["ME.png","logo.jpg"]'>
+          <div class="project-thumb template-thumb">
+            <img src="ME.png" alt="Landing page template preview">
+            <div class="project-num">05</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Landing Page</span>
+              <span class="project-year">Template</span>
+            </div>
+            <h3>Professional Blue Corporate Landing Page</h3>
+            <p>Clean and minimal design for products, services, and personal projects.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-images"></i> View Gallery</button>
+              <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-2" data-category="templates" data-gallery='["ME.png","logo.jpg"]'>
+          <div class="project-thumb template-thumb">
+            <img src="ME.png" alt="Business landing page template preview">
+            <div class="project-num">06</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Business</span>
+              <span class="project-year">Template</span>
+            </div>
+            <h3>Professional Blue Business Page</h3>
+            <p>Trustworthy and polished layout for companies, services, and organizations.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-images"></i> View Gallery</button>
+              <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-category="logos" data-gallery='["logo.jpg"]'>
+          <div class="project-thumb template-thumb logo-thumb">
+            <img src="logo.jpg" alt="Logo design preview">
+            <div class="project-num">07</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Invitation Design</span>
+              <span class="project-year">Branding</span>
+            </div>
+            <h3>Invitation Design for Your Event</h3>
+            <p>Simple, memorable invitation concepts made to give your event a professional look.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-expand"></i> View Larger</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-1" data-category="templates" data-gallery='["ME.png","logo.jpg"]'>
+          <div class="project-thumb template-thumb">
+            <img src="ME.png" alt="Landing page template preview">
+            <div class="project-num">08</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Landing Page</span>
+              <span class="project-year">Template</span>
+            </div>
+            <h3>Black & White Landing Page</h3>
+            <p>Clean and minimal design for products, services, and personal projects.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-images"></i> View Gallery</button>
+              <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-category="logos" data-gallery='["logo.jpg"]'>
+          <div class="project-thumb template-thumb logo-thumb">
+            <img src="logo.jpg" alt="Logo design preview">
+            <div class="project-num">09</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Tarp Design</span>
+              <span class="project-year">Branding</span>
+            </div>
+            <h3>Tarp Design for Your Business or Events</h3>
+            <p>Eye-catching tarp designs made to promote your business or event effectively.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-expand"></i> View Larger</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-2" data-category="templates" data-gallery='["ME.png","logo.jpg"]'>
+          <div class="project-thumb template-thumb">
+            <img src="ME.png" alt="Business landing page template preview">
+            <div class="project-num">10</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Business</span>
+              <span class="project-year">Template</span>
+            </div>
+            <h3>Professional Blue Business Page</h3>
+            <p>Trustworthy and polished layout for companies, services, and organizations.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-images"></i> View Gallery</button>
+              <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-2" data-category="templates" data-gallery='["ME.png","logo.jpg"]'>
+          <div class="project-thumb template-thumb">
+            <img src="ME.png" alt="Business landing page template preview">
+            <div class="project-num">11</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Business</span>
+              <span class="project-year">Template</span>
+            </div>
+            <h3>Professional Blue Business Page</h3>
+            <p>Trustworthy and polished layout for companies, services, and organizations.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-images"></i> View Gallery</button>
+              <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-2" data-category="templates" data-gallery='["ME.png","logo.jpg"]'>
+          <div class="project-thumb template-thumb">
+            <img src="ME.png" alt="Business landing page template preview">
+            <div class="project-num">12</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Business</span>
+              <span class="project-year">Template</span>
+            </div>
+            <h3>Professional Blue Business Page</h3>
+            <p>Trustworthy and polished layout for companies, services, and organizations.</p>
+            <div class="project-links">
+              <button class="plink gallery-trigger" type="button"><i class="fa fa-images"></i> View Gallery</button>
+              <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="contact section compact-contact" id="contact">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Contact Me</span>
+        <h2 class="section-title">Let's work together.</h2>
+        <p class="section-desc">Tell me what you need for your designs or website.</p>
+      </div>
+      <div class="contact-form-wrap reveal-up">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="you@example.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Project details</label>
+            <textarea id="fmessage" name="message" rows="3" placeholder="Tell me about your designs or website..."
+              required></textarea>
+            <span class="form-error" id="msgError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Send Inquiry</span>
+            <i class="fa fa-paper-plane"></i>
+            <div class="btn-loader hidden"><i class="fa fa-spinner fa-spin"></i></div>
+          </button>
+          <div class="form-success hidden" id="formSuccess">
+            <i class="fa fa-check-circle"></i>
+            Thanks! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Biiey<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">© 2026 Bii Ey </p>
+        <a href="#home" class="back-to-top" id="backTop" aria-label="Back to top">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="preview-modal" id="previewModal" role="dialog" aria-modal="true" aria-label="Service preview">
+    <div class="preview-modal-content">
+      <button class="preview-close" id="previewClose" type="button" aria-label="Close preview">×</button>
+      <button class="preview-nav preview-prev" id="previewPrev" type="button" aria-label="Previous image">‹</button>
+      <img class="preview-modal-image" id="previewImage" src="" alt="">
+      <button class="preview-nav preview-next" id="previewNext" type="button" aria-label="Next image">›</button>
+      <div class="preview-count" id="previewCount"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
